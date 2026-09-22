@@ -1,0 +1,25 @@
+body{background-color: antiquewhite;}
+
+a.button {
+        border: 3px solid;
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 5px 30px 5px 30px;
+        margin-top: 25px;
+}
+
+a.shrink-border {
+  background-color: #ffc800;
+  padding: 20px;
+  
+  box-shadow: inset 0 0 0 3px #000000;
+  
+  /* Smoothly transition the box-shadow property */
+  transition: box-shadow 0.3s ease;
+}
+
+.shrink-border:hover {
+  /* Shrink the border thickness from 6px down to 2px */
+  box-shadow: inset 0 0 0 1px #000000;
+}
