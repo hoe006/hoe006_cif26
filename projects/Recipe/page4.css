@@ -1,0 +1,58 @@
+@import url("https://use.typekit.net/ozu3ooq.css");
+body{background-image: url("img/flowers.jpeg");
+background-position: center;
+background-size: cover;
+ background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+ 
+h2{font-family: "gratia", sans-serif;
+font-weight: 900;
+font-style: normal;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+font-size: 50x;}
+
+figcaption{font-family: "gratia", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+a.button{
+   border: 3px solid;
+        color: rgb(255, 222, 139);
+        text-decoration: none;
+        font-weight: 700;
+        padding: 5px 200px 5px 200px;
+        margin-top: 25px; 
+        cursor: pointer;
+  transition: transform 1s ease, box-shadow 1s ease;
+}
+
+a.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 4px rgb(255, 222, 139); 
+}
+
+figure.song {
+  border: 3px solid rgb(255, 222, 139);
+  padding: 18px;
+  margin: 25px auto;
+  width: 70%;
+}
+
+
+figure.song figcaption {
+  color: rgb(255, 222, 139);
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+
+figure.song audio {
+  width: 100%;
+}
+
+audio{opacity: 60%;}

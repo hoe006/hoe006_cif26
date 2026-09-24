@@ -1,0 +1,54 @@
+@import url("https://use.typekit.net/ozu3ooq.css");
+body{background-image: url(img/birds.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;}
+ 
+h2{font-family: "ivypresto-display", serif;
+font-weight: 600;
+font-style: normal;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+font-size: 30x;}
+
+figcaption{font-family: "ivypresto-display", serif;
+font-weight: 300;
+font-style: normal;
+
+}
+
+a.button{
+   border: 3px solid;
+        color: rgb(31, 53, 69);
+        text-decoration: none;
+        font-weight: 700;
+        padding: 5px 200px 5px 200px;
+        margin-top: 25px; 
+        cursor: pointer;
+  transition: transform 1s ease, box-shadow 1s ease;
+}
+
+a.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 4px rgb(31, 53, 69); 
+}
+
+figure.song {
+  border: 3px solid rgb(31, 53, 69);
+  padding: 18px;
+  margin: 25px auto;
+  width: 70%;
+}
+
+figure.song figcaption {
+  color: rgb(31, 53, 69);
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+figure.song audio {
+  width: 100%;
+}
+
+audio{opacity: 60%;}

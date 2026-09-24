@@ -1,0 +1,41 @@
+@import url("https://use.typekit.net/ozu3ooq.css");
+body{background-color: antiquewhite;}
+ 
+ h1{font-family: "ivypresto-display", serif;
+font-weight: 700;
+font-style: normal;
+color: rgb(230, 38, 38);
+font-size: 200px;
+text-align: center;
+margin-bottom: 2px;
+margin-top: 100px;}
+
+h2{font-family: "ivypresto-display", serif;
+font-weight: 600;
+font-style: normal;
+text-align: center;
+margin-top: 2px;
+margin-bottom: 150px;
+font-size: 30x;}
+
+p,li{font-family: "ivypresto-display", serif;
+font-weight: 300;
+font-style: normal;
+
+}
+
+a.button{
+   border: 3px solid;
+        color: rgb(230, 38, 38);
+        text-decoration: none;
+        font-weight: 700;
+        padding: 5px 200px 5px 200px;
+        margin-top: 25px; 
+        cursor: pointer;
+  transition: transform 1s ease, box-shadow 1s ease;
+}
+
+a.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 4px rgb(230, 38, 38); 
+}
