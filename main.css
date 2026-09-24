@@ -3,6 +3,7 @@ body {
   background-color: #ffcd62;
   font-family: helvet;
 }
+
 h1{
   text-align: justify; text-align-last: center;
 font-family: "keo", sans-serif;
@@ -10,6 +11,7 @@ font-weight: 400;
 font-style: normal;
   font-size:100px ;
 }
+
 h2{
   text-align: justify; text-align-last: center;
  font-family: "keo", sans-serif;
