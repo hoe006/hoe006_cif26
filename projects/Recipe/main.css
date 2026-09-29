@@ -37,5 +37,6 @@ a.button{
 
 a.button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 0 4px rgb(230, 38, 38); 
+  box-shadow: 0 0 0 4px rgb(255, 0, 0); 
+  color: rgb(255, 0, 0);
 }
