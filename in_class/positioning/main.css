@@ -1,0 +1,39 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 200vh;
+  margin: 0;
+  padding: 30px;
+  background-color: lavender;
+}
+
+div {
+  width: 500px;
+  max-width: 100%;
+  min-height: 160px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.static {
+  background-color: blue;
+}
+
+.relative {
+  background-color: yellow;
+}
+
+.absolute {
+  background-color: green;
+}
+
+.fixed {
+  background-color: purple;
+}
+
+.sticky {
+  background-color: red;
+}
