@@ -1,31 +1,111 @@
 @import url("https://use.typekit.net/ozu3ooq.css");
+
+:root {
+  --background: #ffcd62;   /* yellow page background */
+  --dark-red: rgb(133, 0, 0);  /* text, borders, shadows */
+  --cream: #fff4d6;        /* button fill */
+}
+
+
 body {
-  background-color: #ffcd62;
-  font-family: helvet;
+  background-color: var(--background);
+  color: var(--dark-red);
+  font-family: "keo", sans-serif;
+  margin: 0;
 }
 
-h1{
-  text-align: justify; text-align-last: center;
-font-family: "keo", sans-serif;
-font-weight: 400;
-font-style: normal;
-  font-size:100px ;
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 24px;
 }
 
-h2{
-  text-align: justify; text-align-last: center;
- font-family: "keo", sans-serif;
-font-weight: 400;
-font-style: normal;
+
+
+.heading {
+  margin-bottom: 60px;
+}
+
+
+h1 {
+  font-size: 100px;
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: center;
+}
+
+
+h2 {
   font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: center;
 }
 
-h1,h2{ line-height: 1.1;  
+h1, h2 {
+  font-family: "keo", sans-serif;
+  line-height: 1.1;
   margin-top: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 10px;
+}
 
-  a{font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-left: 195px;
-color: rgb(133, 0, 0);
-margin-top: 50px;
-margin-bottom: 50px;}
+
+/* =====================================================
+   BUTTONS (the three project links)
+   ===================================================== */
+
+
+.entries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 28px;                              
+}
+
+
+.entry {
+  display: flex;
+}
+
+
+.entry a {
+  display: flex;
+  align-items: center;     
+  justify-content: center;  
+  width: 100%;
+  min-height: 140px;
+
+  /* text */
+  font-family: "keo", sans-serif;
+  font-size: 32px;
+  color: var(--dark-red);
+  text-decoration: none;   
+
+
+  background-color: var(--cream);
+  border: 3px solid var(--dark-red);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--dark-red);
+
+
+  transition: all 0.15s ease;
+}
+
+
+.entry a:hover {
+  background-color: var(--dark-red);
+  color: var(--cream);
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--dark-red);
+}
+
+.entry a:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0 0 0 var(--dark-red);
+}
+
+
+.entry a:focus-visible {
+  outline: 3px solid var(--dark-red);
+  outline-offset: 5px;
+}
