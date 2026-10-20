@@ -1,11 +1,15 @@
 @import url("https://use.typekit.net/ozu3ooq.css");
 
 :root {
-  --background: #ffcd62;   /* yellow page background */
-  --dark-red: rgb(133, 0, 0);  /* text, borders, shadows */
-  --cream: #fff4d6;        /* button fill */
+  --background: #ffcd62; 
+  --dark-red: rgb(133, 0, 0);  
+  --cream: #fff4d6;       
 }
 
+p {text-align: center;
+margin-left: 200px;
+margin-right: 200px;
+font-family: Arial, Helvetica, sans-serif;}
 
 body {
   background-color: var(--background);
@@ -14,19 +18,15 @@ body {
   margin: 0;
 }
 
-
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 24px;
 }
 
-
-
 .heading {
   margin-bottom: 60px;
 }
-
 
 h1 {
   font-size: 100px;
@@ -34,7 +34,6 @@ h1 {
   text-align: justify;
   text-align-last: center;
 }
-
 
 h2 {
   font-size: 20px;
@@ -50,23 +49,15 @@ h1, h2 {
   margin-bottom: 10px;
 }
 
-
-/* =====================================================
-   BUTTONS (the three project links)
-   ===================================================== */
-
-
 .entries {
   display: grid;
   grid-template-columns: repeat(3, 1fr);  
   gap: 28px;                              
 }
 
-
 .entry {
   display: flex;
 }
-
 
 .entry a {
   display: flex;
@@ -74,23 +65,17 @@ h1, h2 {
   justify-content: center;  
   width: 100%;
   min-height: 140px;
-
-  /* text */
+ 
   font-family: "keo", sans-serif;
   font-size: 32px;
   color: var(--dark-red);
   text-decoration: none;   
-
-
   background-color: var(--cream);
   border: 3px solid var(--dark-red);
   border-radius: 16px;
   box-shadow: 6px 6px 0 var(--dark-red);
-
-
   transition: all 0.15s ease;
 }
-
 
 .entry a:hover {
   background-color: var(--dark-red);
@@ -102,10 +87,4 @@ h1, h2 {
 .entry a:active {
   transform: translate(6px, 6px);
   box-shadow: 0 0 0 var(--dark-red);
-}
-
-
-.entry a:focus-visible {
-  outline: 3px solid var(--dark-red);
-  outline-offset: 5px;
 }
