@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quietude — Grid Study</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --pad: 1.45rem;
+    --gap-x: 0.65rem;
+    --gap-y: 0.9rem;
+    --caption-space: 1.5rem;
+  }
+  body {
+    background: #fff;
+    color: #111;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    padding-bottom: 3rem;
+  }
+  a { color: inherit; }
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem var(--pad);
+  }
+  .header a { color: #8c8c8c; text-decoration: none; }
+  .header a:hover { color: #111; }
+
+
+  .feed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0 var(--pad);
+  }
+  .tile {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding-bottom: var(--caption-space);
+  }
+  .tile div {
+    flex: 1;
+    aspect-ratio: 3 / 2;
+    background: var(--c, #ebebeb);
+  }
+
+  .big { grid-row: span 2; }
+  .big div { aspect-ratio: auto; min-height: 0; }
+  .c1 { grid-column: 1 / 3; }
+  .c2 { grid-column: 2 / 4; }
+  .c3 { grid-column: 3 / 5; } 
+
+</style>
+</head>
+<body>
+
+<header class="header">
+  <span>Grid Study</span>
+  <a href="https://minimalissimo.com/">Original: Minimalissimo ↗</a>
+</header>
+
+<main class="feed">
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+
+  <a class="tile big c1"><div style="--c:#d9c3a5"></div></a>
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+  <a class="tile big c3"><div style="--c:#b5b9bd"></div></a>
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+
+  <a class="tile"><div></div></a>
+  <a class="tile big c2"><div style="--c:#c9bfae"></div></a>
+  <a class="tile"><div style="--c:#d8cdb4"></div></a>
+  <a class="tile"><div></div></a>
+  <a class="tile"><div></div></a>
+</main>
+</body>
+</html>
