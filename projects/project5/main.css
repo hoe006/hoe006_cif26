@@ -1,7 +1,7 @@
 body { margin: 0; height: 100vh; overflow: hidden; background: var(--sky); color: var(--shadow); }
-body[data-mood="dawn"]  { --sky: #F6D5B5; --sun: #FF8A5B; --shadow: #B5452F; --pillar: #2B3A67; }
-body[data-mood="day"]   { --sky: #FBF4D9; --sun: #FFD23F; --shadow: #243B6B; --pillar: #E4572E; }
-body[data-mood="dusk"]  { --sky: #F2A065; --sun: #FFE29A; --shadow: #4B1D3F; --pillar: #2E294E; }
+body[data-mood="dawn"]  { --sky: #f5a895; --sun: #ff5b5b; --shadow: #B5452F; --pillar: #2B3A67; }
+body[data-mood="day"]   { --sky: #6dceff; --sun: #ffcd28; --shadow: #1e315b; --pillar: #ffffff; }
+body[data-mood="dusk"]  { --sky: #ffa71a; --sun: #ff4400; --shadow: #4B1D3F; --pillar: #2E294E; }
 body[data-mood="night"] { --sky: #101A3A; --sun: #E8EEFF; --shadow: #050A1F; --pillar: #5EE6EB; }
 
 #path { position: absolute; 
@@ -37,5 +37,4 @@ body[data-mood="night"] { --sky: #101A3A; --sun: #E8EEFF; --shadow: #050A1F; --p
   margin: -5vmin; 
   border-radius: 2vmin; 
   background: var(--pillar); }
-
 .ready, .ready div { transition: all 1s linear; }
