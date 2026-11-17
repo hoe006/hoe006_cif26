@@ -11,7 +11,7 @@ body[data-mood="night"] { --sky: #101A3A; --sun: #E8EEFF; --shadow: #050A1F; --p
   height: 80%; 
   border: 1px dashed; 
   border-radius: 50%; 
-  opacity: 0.25; }
+  opacity: 0.30; }
 
 #sun { position: absolute; 
   width: 26vmin; 
