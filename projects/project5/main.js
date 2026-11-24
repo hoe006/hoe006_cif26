@@ -12,11 +12,8 @@ function updateScene() {
     across = ((time + 6) % 24) / 12;
   }
   var angle = across * Math.PI;
-
-
   sun.style.left = 50 + 45 * Math.cos(angle) + '%';
   sun.style.top = 50 - 40 * Math.sin(angle) + '%';
-
   shadow.style.transform = 'rotate(' + (90 - across * 180) + 'deg)';
   shadow.style.height = 60 - 40 * Math.sin(angle) + 'vmin';
 
@@ -43,3 +40,5 @@ setInterval(updateScene, 1000);
 setTimeout(function () {
   document.body.classList.add('ready');
 }, 1000);
+
+
