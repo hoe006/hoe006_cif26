@@ -111,7 +111,5 @@ button:hover, .playing button, .home:hover {
   background-color: #1b1918;
   color: #d6d3cb;
 }
-
 .home { display: inline-block; margin-top: 30px; }
-
 a:focus, button:focus { outline: 3px solid #f6ece7; outline-offset: 3px; }
